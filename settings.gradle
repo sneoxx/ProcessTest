@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2019 Haulmont Technology Ltd. All Rights Reserved.
+ * Haulmont Technology proprietary and confidential.
+ * Use is subject to license terms.
+ */
+
+rootProject.name = 'ProcessTest'
+include(':processtest-global', ':processtest-core', ':processtest-gui',
+        ':processtest-web', ':processtest-portal', ':processtest-mobile', ':processtest-mobile-rest')
+project(':processtest-global').projectDir = new File(settingsDir, 'modules/global')
+project(':processtest-core').projectDir = new File(settingsDir, 'modules/core')
+project(':processtest-gui').projectDir = new File(settingsDir, 'modules/gui')
+project(':processtest-web').projectDir = new File(settingsDir, 'modules/web')
+project(':processtest-portal').projectDir = new File(settingsDir, 'modules/portal')
+project(':processtest-mobile-rest').projectDir = new File(settingsDir, 'modules/mobile-rest')
